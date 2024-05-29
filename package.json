@@ -1,0 +1,20 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "The JavaScript template",
+  "scripts": {
+    "build": "esbuild ./src/index.mjs --bundle --outfile=./build/index.js",
+    "watch": "esbuild ./src/index.mjs --bundle --outfile=./build/index.js --watch",
+    "start-server": "http-server ./ -o -c-1",
+    "start": "yarn build && yarn start-server"
+  },
+  "devDependencies": {
+    "esbuild": "0.21.4",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
+    "pixi.js": "8.1.2"
+  }
+}
