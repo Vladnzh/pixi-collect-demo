@@ -71,3 +71,5 @@ public/
 
 # Windows files
 Thumbs.db
+
+yarn.lock
